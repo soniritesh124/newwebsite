@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Ritesh Soni</title>
+    <link rel="icon" type="image/x-icon" href="assets/imgs/favicon.ico">
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#"></a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#Skills">Skills</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#Resume">Resume</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+                <!-- <li class="item ml-md-3">
+                    <a href="components.html" class="btn btn-primary">Components</a>
+                </li> -->
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span class="down">I am Ritesh Soni</span>
+            </h1>
+            <p class="header-subtitle">IOT Engineer</p>
+
+            <button class="btn btn-primary">Visit My Works</button>
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/img1.png" class="about-img"
+                        alt="Logo">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p>
+                        Hello, I am interested in new technology and new upcoming languages which have been developed recently and also the upcoming invention and personal invention ideas and I want to share all of these with the world. I love to share all new ideas and learn from others about the technology.
+                    </p>
+                    <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+                    <div class="btn-rounded btn btn-outline-primary mt-4" onclick="download()"><a>Downlode Resume</a></div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js">
+                </script>
+                <script> 
+                function download(){
+                                    axios({
+                                            url:'/assets/Ritesh_Resume.pdf',
+                                            method:'GET',
+                                            responseType: 'blob'
+                                            })
+                                    .then((response) => {
+                                            const url = window.URL
+                                            .createObjectURL(new Blob([response.data]));
+                                            const link = document.createElement('a');
+                                            link.href = url;
+                                            link.setAttribute('download', 'Ritesh_Resume.pdf');
+                                            document.body.appendChild(link);
+                                            link.click();
+                                    })
+                                }
+        
+                </script>
+                </div>
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+
+
+
+    <!-- service section -->
+    <!-- <section class="section" id="service">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Do ?</p>
+            <h6 class="section-title mb-6">Service</h6> -->
+
+            <!-- row -->
+            <!-- <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/pencil-case.svg"
+                                alt="Logo"
+                                class="icon">
+                            <h6 class="title">Adipisicing</h6>
+                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
+                                molestias dolorem iste quod.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/responsive.svg"
+                                alt="Logo"
+                                class="icon">
+                            <h6 class="title">Sapiente</h6>
+                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
+                                molestias dolorem iste quod.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/toolbox.svg"
+                                alt="Logo"
+                                class="icon">
+                            <h6 class="title">Placeat</h6>
+                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
+                                molestias dolorem iste quod.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/analytics.svg"
+                                alt="Logo"
+                                class="icon">
+                            <h6 class="title">Iusto</h6>
+                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
+                                molestias dolorem iste quod.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- end of row -->
+        <!-- </div>
+    </section> -->
+    <!-- end of service section -->
+<section class="section" id="skills">
+        <div class="container text-center">
+            <p class="section-subtitle">Skill is the unified force of experience, intellect and passion in their operation. </p>
+            <h6 class="section-title mb-6">Skills</h6>
+
+
+
+<div class="row justify-content-between">
+         <div class="col-md-5">
+            <!-- <h3 class="components-section-title font-weight-normal mt-5">Progress Bars :</h3> -->
+            <!-- <hr> -->
+            <small>Internet OF things</small>
+            <div class="progress mt-2 mb-3">
+               <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0"
+                  aria-valuemax="100"><span></span></div>
+            </div>
+            <small>Computer Vision</small>
+            <div class="progress mt-2 mb-3">
+               <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25"
+                  aria-valuemin="0" aria-valuemax="100"><span></span></div>
+            </div>
+            <small>MACHINE LEARNING / DEEP LEARNING</small>
+            <div class="progress mt-2 mb-3">
+               <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25"
+                  aria-valuemin="0" aria-valuemax="100"><span></span></div>
+            </div>
+            <small>Augmented Reality</small>
+            <div class="progress mt-2 mb-3">
+               <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25"
+                  aria-valuemin="0" aria-valuemax="100"><span></span></div>
+            </div>
+         </div>
+         <div class="col-md-5">
+            <small>HTML</small>
+            <div class="progress mt-2 mb-3">
+               <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0"
+                  aria-valuemax="100"><span></span></div>
+            </div>
+            <small>CSS</small>
+            <div class="progress mt-2 mb-3">
+               <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25"
+                  aria-valuemin="0" aria-valuemax="100"><span></span></div>
+            </div>
+            <small>C / C++</small>
+            <div class="progress mt-2 mb-3">
+               <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25"
+                  aria-valuemin="0" aria-valuemax="100"><span></span></div>
+            </div>
+            <small>CYBER SECURITY</small>
+            <div class="progress mt-2 mb-3">
+               <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25"
+                  aria-valuemin="0" aria-valuemax="100"><span></span></div>
+            </div>
+         </div>
+     </div>
+ </div>
+</section>
+
+
+    <!-- ======= Resume Section ======= -->
+    <section class="resume" id="Resume">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Resume</h2>
+          <p>IoT & AI field fascinates me and wanted to explore and grow in the same. Willing to accept new challenges in this field which not only help the organization but also update & evolve my practical skills.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="testimonial-card-body">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <p><em>Myself Ritesh Soni and I would like to share my knowledge based on the field of IoT and Artificial Intelligence. Also, i have worked on multiple projects as mentioned in both the sections. I want to explore more in the same and want to help human kind by making easy and automated.</em></p>
+              <ul>
+                <li>Ahmedabad, India</li>
+                <li>(+91) 9723271716</li>
+                <li>soniritesh124@gmail.com</li>
+              </ul>
+            </div>
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>HSC(Science)</h4>
+<!--               <h5>2014 - 2015</h5> -->
+              <p><em>Pooja School, Ahmedabad, Gujrat</em></p>
+              <p>Field Of Interests:-<br> Physics, Chemistry, Mathematics</p>
+            </div>
+            <div class="resume-item">
+              <h4>Bachelor of Engineering in Computer Engineering</h4>
+<!--               <h5>2015 - 2020</h5> -->
+              <p><em>Ahmedabad Institute Of Technology, Ahmedabad, Gujrat</em></p>
+              <p>Field Of Interests:-<br> C programming, C++, Java, Microprocessing & Interfacing, Web Designing, HTML/CSS, Artificial Intelligence, Internet Of Things, Quantum Computing, Mathematics, Php, WordPress, .Net, Animations, Game Designing, Logo Design, Digital Marketing, Search Engine Optimization, E-Commerce, Data/Cyber Security.</p>
+            </div>
+          </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="testimonial-card-body">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Artificial Intelligence</h4>
+              <h5> 23rd  Dec 2019  to 30th March 2020</h5>
+<!--               <p><em>SenseQue Technologies Pvt. Ltd , Ahmedabad, Gujrat </em></p> -->
+              <ul>
+                <li>Initially I understood what is Artificial Intelligence and it's different parts and working areas.</li>
+                <li>After that, I have gone through the Machine Learning stuffs and able to create any type of model based on that.</li>
+                <li>Also, other models of computer vision along with recoved library and alogrithms are completed.</li>
+                <li>I have creates few projects based on AI and ML. They are as follows:
+                Face mask recognition, Object Direction, Attendence system, Self-driving car lane detection</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Internet Of Things</h4>
+              <h5>2017 - Present</h5>
+              <p><em></em></p>
+              <ul>
+                <li>Internet of Things starts with hardware in which I have advanced level of knowledge </li>
+                <li>In order to make hardware work according to our requirements, we need to program it in te same way.</li>
+                <li>Also, the name itself suggests us that it needs online storage facility to store the data. I have knowledge of how to handle data on cloud as well.</li>
+                <li>Projects built by me are Smart Dustbin facility, Smart home(with mobile app), Google assistant smart home and smart parking system.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- portfolio section -->
+    <section class="section" id="portfolio">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Did ?</p>
+            <h6 class="section-title mb-6">Portfolio</h6>
+            <!-- row -->
+
+        <!-- AI ----->
+
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img src="assets/imgs/Project/AI1.jpg" class="portfolio-card-img"
+                            alt="Logo">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Face Mask Recognition</h5>
+                                    <p class="font-weight-normal">Category: AI</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+
+
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/Project/AI2.jpg" class="img-responsive rounded"
+                            alt="Logo">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Self-Driving Car Lane Detection</h5>
+                                    <p class="font-weight-normal">Category: AI</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+
+
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/Project/AI3.png" class="img-responsive rounded"
+                            alt="Logo">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Drowsy Driver Detection</h5>
+                                    <p class="font-weight-normal">Category: AI</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+
+
+            <!---- IOT ----->
+
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/Project/IoT1.png" class="img-responsive rounded"
+                            alt="Logo">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Smart Parking System</h5>
+                                    <p class="font-weight-normal">Category: IOT</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/Project/IoT3.jpg" class="img-responsive rounded"
+                            alt="Logo">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Smart Home(with mobile app)</h5>
+                                    <p class="font-weight-normal">Category: IOT</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/Project/IoT4.jpg" class="img-responsive rounded"
+                            alt="Logo">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Google Assistant Smart Home</h5>
+                                    <p class="font-weight-normal">Category: IOT</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+
+
+
+            <!-- GPS ---->
+
+            <!-- <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/folio-2.jpg" class="img-responsive rounded"
+                            alt="Logo">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h5>
+                                    <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+
+            <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/folio-2.jpg" class="img-responsive rounded"
+                            alt="Logo">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h5>
+                                    <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>
+                        </span>
+                    </a>
+                </div> -->
+
+
+            <!--ARIOT--->
+
+            <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/Project/IoTAR1.jpeg" class="img-responsive rounded"
+                            alt="Logo">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>IoT and AR based Home Automation project</h5>
+                                    <p class="font-weight-normal">Category: ARIOT</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+
+            <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/Project/IoTAR2.png" class="img-responsive rounded"
+                            alt="Logo">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>oT and make our own AR based Home Automation project(Virtual Buttons)</h5>
+                                    <p class="font-weight-normal">Category: ARIOT</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/Project/IoTAR3.png" class="img-responsive rounded"
+                            alt="Logo">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>AR and IoT Sensor Data</h5>
+                                    <p class="font-weight-normal">Category: ARIOT</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of portfolio section -->
+
+    <!-- pricing section -->
+    <!-- section class="section" id="pricing">
+        <div class="container text-center">
+            <p class="section-subtitle">How Much I Charge ?</p>
+            <h6 class="section-title mb-6">My Pricing</h6> -->
+            <!-- row -->
+            <!-- <div class="pricing-wrapper">
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon" src="assets/imgs/scooter.svg"
+                            alt="Logo">
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Free</h6>
+                        <div class="pricing-card-list">
+                            <p>accusamus reprehenderit</p>
+                            <p>provident dolorem </p>
+                            <p>quos neque</p>
+                            <p>fugiat quibusdam</p>
+                            <p><i class="ti-close"></i></p>
+                            <p><i class="ti-close"></i></p>
+                        </div>
+                    </div>
+                    <div class="pricing-card-footer">
+                        <span>$</span>
+                        <span>0.00/Month</span>
+                    </div>
+                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon" src="assets/imgs/shipped.svg"
+                            alt="Logo">
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Basic</h6>
+                        <div class="pricing-card-list">
+                            <p>accusamus reprehenderit</p>
+                            <p>provident dolorem </p>
+                            <p>quos neque</p>
+                            <p>fugiat quibusdam</p>
+                            <p>accusamus laboriosam</p>
+                            <p><i class="ti-close"></i></p>
+                        </div>
+                    </div>
+                    <div class="pricing-card-footer">
+                        <span>$</span>
+                        <span>9.99/Month</span>
+                    </div>
+                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon" src="assets/imgs/startup.svg"
+                            alt="Logo">
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Premium</h6>
+                        <div class="pricing-card-list">
+                            <p>accusamus reprehenderit</p>
+                            <p>provident dolorem </p>
+                            <p>quos neque</p>
+                            <p>fugiat quibusdam</p>
+                            <p>accusamus laboriosam</p>
+                            <p>inventore omnis</p>
+                        </div>
+                    </div>
+                    <div class="pricing-card-footer">
+                        <span>$</span>
+                        <span>99.9/Month</span>
+                    </div>
+                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
+                </div> -->
+
+     <!--        </div>
+        </div> 
+    </section> -->
+
+    <!-- section -->
+    <section class="section-sm bg-primary">
+        <!-- container -->
+        <div class="container text-center text-sm-left">
+            <!-- row -->
+            <div class="row align-items-center">
+                <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                    <h6 class="title text-light">Want to work with me?</h6>
+                    <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
+                </div>
+                <div class="col-sm offset-sm-2 offset-md-3">
+                    <button onclick="myFunction()" class="btn btn-lg my-font btn-light rounded">Hire Me</button>
+                    <p id="demo"></p>
+                    <script>
+                    function myFunction() {document.getElementById("demo").innerHTML = "+91 9723271716";}
+                </script>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of section -->
+
+    <!-- testimonial section -->
+   <!--  <section class="section" id="testmonial">
+        <div class="container text-center">
+            <p class="section-subtitle">What Think Client About Me ?</p>
+            <h6 class="section-title mb-6">Testmonial</h6> -->
+
+            <!-- row -->
+            <!-- <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-img-holder">
+                            <img src="assets/imgs/avatar2.jpg" class="testimonial-card-img"
+                                alt="Logo">
+                        </div>
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis
+                                adipisci nihil.</p>
+                            <h6 class="testimonial-card-title">Emily Reb</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-img-holder">
+                            <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img"
+                                alt="Logo">
+                        </div>
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis
+                                adipisci nihil.</p>
+                            <h6 class="testimonial-card-title">Emily Reb</h6>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        <!-- </div> 
+    </section>  -->
+
+    <!-- blog section -->
+    <!-- <section class="section" id="blog"> -->
+        <!-- container -->
+        <!-- <div class="container text-center">
+            <p class="section-subtitle">Recent Posts?</p>
+            <h6 class="section-title mb-6">Blog</h6> -->
+            <!-- blog-wrapper -->
+            <!-- <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/img-1.jpg" class="blog-card-img"
+                        alt="Logo">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Consectetur adipisicing elit</h6>
+
+                        <p class="blog-card-caption">
+                            <a href="#">By: Admin</a>
+                            <a href="#"><i class="ti-heart text-danger"></i> 234</a>
+                            <a href="#"><i class="ti-comment"></i> 123</a>
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit
+                            delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium
+                            neque numquam mollitia modi quasi distinctio.</p>
+
+                        <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b>
+                        </p>
+                        <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis
+                            cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
+
+                        <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                </div> -->
+            <!-- </div> -->
+
+            <!-- blog-wrapper -->
+            <!-- <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/img-2.jpg" class="blog-card-img"
+                        alt="Logo">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Explicabo illo</h6>
+
+                        <p class="blog-card-caption">
+                            <a href="#">By: Admin</a>
+                            <a href="#"><i class="ti-heart text-danger"></i> 456</a>
+                            <a href="#"><i class="ti-comment"></i> 264</a>
+                        </p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim,
+                            vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro
+                            quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto
+                            omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae?
+                            Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non
+                            dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus
+                            eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
+
+                        <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                </div> -->
+            <!-- </div> -->
+
+        <!-- </div> -->
+    <!-- </section> -->
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How can you communicate?</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <!-- contact form -->
+            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="email" class="form-control" placeholder="Enter Email" requried>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="comment" id="comment" rows="6" class="form-control"
+                            placeholder="Write Something"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                    </div>
+                </div>
+            </form><!-- end of contact form -->
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">
+            <p class="mb-0">Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy; <a
+                    href="http://www.devcrud.com"></a> <a
+                    href="https://themewagon.com"></a>
+            </p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="https://www.facebook.com/people/Ritesh-Soni/100009667056074" class="link"><i class="ti-facebook"></i></a>
+                <a href="https://twitter.com/soniritesh4" class="link"><i class="ti-twitter-alt"></i></a>
+                <!-- <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a> -->
+                <!-- <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a> -->
+                <a href="https://www.instagram.com/i_am_.ritesh/" class="link"><i class="ti-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/er-ritesh-soni/" class="link"><i class="ti-linkedin"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+
+</body>
+
+</html>
