@@ -12247,7 +12247,7 @@ pre .code {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #0563bb;
+  border-left: 2px solid #695aa6;
   position: relative;
 }
 
@@ -12257,7 +12257,7 @@ pre .code {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #0563bb;
+  color: #695aa6;
   margin-bottom: 10px;
 }
 
