@@ -14,15 +14,15 @@
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="assets/css/meyawo.css">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W16386JEHQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W16386JEHQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-W16386JEHQ');
-</script>
+      gtag('config', 'G-W16386JEHQ');
+  </script>
 
 </head>
 
@@ -85,7 +85,7 @@
             <div class="about">
                 <div class="about-img-holder">
                     <img src="assets/imgs/img1.png" class="about-img"
-                        alt="Logo">
+                    alt="Logo">
                 </div>
                 <div class="about-caption">
                     <p class="section-subtitle">Who Am I ?</p>
@@ -95,27 +95,27 @@
                     </p>
                     <!-- <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button> -->
                     <div class="btn-rounded btn btn-outline-primary mt-4" onclick="download()"><a>Downlode CV</a></div>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js">
-                </script>
-                <script> 
-                function download(){
-                                    axios({
-                                            url:'https://www.riteshsoni.tech/assets/Ritesh_Resume.pdf',
-                                            method:'GET',
-                                            responseType: 'blob'
-                                            })
-                                    .then((response) => {
-                                            const url = window.URL
-                                            .createObjectURL(new Blob([response.data]));
-                                            const link = document.createElement('a');
-                                            link.href = url;
-                                            link.setAttribute('download', 'Ritesh_Resume.pdf');
-                                            document.body.appendChild(link);
-                                            link.click();
-                                    })
-                                }
-        
-                </script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js">
+                    </script>
+                    <script> 
+                        function download(){
+                            axios({
+                                url:'https://www.riteshsoni.tech/assets/Ritesh_Resume.pdf',
+                                method:'GET',
+                                responseType: 'blob'
+                            })
+                            .then((response) => {
+                                const url = window.URL
+                                .createObjectURL(new Blob([response.data]));
+                                const link = document.createElement('a');
+                                link.href = url;
+                                link.setAttribute('download', 'Ritesh_Resume.pdf');
+                                document.body.appendChild(link);
+                                link.click();
+                            })
+                        }
+                        
+                    </script>
                 </div>
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
@@ -183,78 +183,98 @@
             </div> -->
             <!-- end of row -->
         <!-- </div>
-    </section> -->
-    <!-- end of service section -->
-<section class="section" id="skills">
-        <div class="container text-center">
-            <p class="section-subtitle">Skill is the unified force of experience, intellect and passion in their operation. </p>
-            <h6 class="section-title mb-6">Skills</h6>
+        </section> -->
+        <!-- end of service section -->
+        <section class="section" id="skills">
+            <div class="container text-center">
+                <p class="section-subtitle">Skill is the unified force of experience, intellect and passion in their operation. </p>
+                <h6 class="section-title mb-6">Skills</h6>
 
 
 
-<div class="row justify-content-between">
-         <div class="col-md-5">
-            <!-- <h3 class="components-section-title font-weight-normal mt-5">Progress Bars :</h3> -->
-            <!-- <hr> -->
-            <small>Internet OF things</small>
-            <div class="progress mt-2 mb-3">
-               <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0"
-                  aria-valuemax="100"><span></span></div>
-            </div>
-            <small>Computer Vision</small>
-            <div class="progress mt-2 mb-3">
-               <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25"
-                  aria-valuemin="0" aria-valuemax="100"><span></span></div>
-            </div>
-            <small>MACHINE LEARNING / DEEP LEARNING</small>
-            <div class="progress mt-2 mb-3">
-               <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25"
-                  aria-valuemin="0" aria-valuemax="100"><span></span></div>
-            </div>
-            <small>Augmented Reality</small>
-            <div class="progress mt-2 mb-3">
-               <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25"
-                  aria-valuemin="0" aria-valuemax="100"><span></span></div>
-            </div>
-         </div>
-         <div class="col-md-5">
-            <small>HTML</small>
-            <div class="progress mt-2 mb-3">
-               <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0"
-                  aria-valuemax="100"><span></span></div>
-            </div>
-            <small>CSS</small>
-            <div class="progress mt-2 mb-3">
-               <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25"
-                  aria-valuemin="0" aria-valuemax="100"><span></span></div>
-            </div>
-            <small>C / C++</small>
-            <div class="progress mt-2 mb-3">
-               <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25"
-                  aria-valuemin="0" aria-valuemax="100"><span></span></div>
-            </div>
-            <small>CYBER SECURITY</small>
-            <div class="progress mt-2 mb-3">
-               <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25"
-                  aria-valuemin="0" aria-valuemax="100"><span></span></div>
-            </div>
+                <div class="row justify-content-between">
+                   <div class="col-md-5">
+                    <!-- <h3 class="components-section-title font-weight-normal mt-5">Progress Bars :</h3> -->
+                    <!-- <hr> -->
+                    <small>Internet OF things</small>
+                    <div class="progress mt-2 mb-3">
+                     <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0"
+                     aria-valuemax="100"><span></span></div>
+                 </div>
+                 <small>Computer Vision</small>
+                 <div class="progress mt-2 mb-3">
+                     <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25"
+                     aria-valuemin="0" aria-valuemax="100"><span></span></div>
+                 </div>
+                 <small>MACHINE LEARNING / DEEP LEARNING</small>
+                 <div class="progress mt-2 mb-3">
+                     <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25"
+                     aria-valuemin="0" aria-valuemax="100"><span></span></div>
+                 </div>
+                 <small>Augmented Reality</small>
+                 <div class="progress mt-2 mb-3">
+                     <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25"
+                     aria-valuemin="0" aria-valuemax="100"><span></span></div>
+                 </div>
+             </div>
+             <div class="col-md-5">
+                <small>HTML</small>
+                <div class="progress mt-2 mb-3">
+                 <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0"
+                 aria-valuemax="100"><span></span></div>
+             </div>
+             <small>CSS</small>
+             <div class="progress mt-2 mb-3">
+                 <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25"
+                 aria-valuemin="0" aria-valuemax="100"><span></span></div>
+             </div>
+             <small>C / C++</small>
+             <div class="progress mt-2 mb-3">
+                 <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25"
+                 aria-valuemin="0" aria-valuemax="100"><span></span></div>
+             </div>
+             <small>CYBER SECURITY</small>
+             <div class="progress mt-2 mb-3">
+                 <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25"
+                 aria-valuemin="0" aria-valuemax="100"><span></span></div>
+             </div>
          </div>
      </div>
- </div>
+     <table class="table table-borderless text-left">
+       <tbody>
+        
+         
+
+        <tr>
+         <td>
+          <p class="font-weight-bold text-muted">Description :</p>
+      </td>
+      <td>
+          <p>Experience in IoT Protocols (MQTT, AMQP, CoAP)<br>Proficient with Python/C/C++<br>Microcontroller ESP32, Arduino and others
+              <br>Experience of  PCB Layout in Easyeda Designer etc.<br>Protocols: - Ethernet, Wi-Fi, USB, Serial interfaces(SPI, I2C, RS485, RS422, RS232), Modbus, HTTP, MQTT<br>Build, test, and deploy firmware for prototypes and next generation wifi, ZigBee, and Bluetooth LE devices<br>Experience with testing and debugging embedded electronics, including operating knowledge of standard electronic test equipment.<br>Experience in API and Web Service<br>Experience in working with Linux and Windows environment</p>
+          </td>
+      </tr>
+  </li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 
 
-    <!-- ======= Resume Section ======= -->
-    <section class="resume" id="Resume">
-      <div class="container">
-        <div class="section-title text-center">
-          <h2>Resume</h2>
-          <p>IoT & AI field fascinates me and wanted to explore and grow in the same. Willing to accept new challenges in this field which not only help the organization but also update & evolve my practical skills.</p>
-        </div>
+<!-- ======= Resume Section ======= -->
+<section class="resume" id="Resume">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2>Resume</h2>
+      <p>IoT & AI field fascinates me and wanted to explore and grow in the same. Willing to accept new challenges in this field which not only help the organization but also update & evolve my practical skills.</p>
+  </div>
 
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="testimonial-card-body">
+  <div class="row">
+      <div class="col-lg-6">
+        <div class="testimonial-card-body">
             <h3 class="resume-title">Sumary</h3>
             <div class="resume-item pb-0">
               <p><em>Myself Ritesh Soni and I would like to share my knowledge based on the field of IoT and Artificial Intelligence. Also, i have worked on multiple projects as mentioned in both the sections. I want to explore more in the same and want to help human kind by making easy and automated.</em></p>
@@ -262,54 +282,54 @@
                 <li>Ahmedabad, India</li>
                 <li>(+91) 9723271716</li>
                 <li>soniritesh124@gmail.com</li>
-              </ul>
-            </div>
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>HSC(Science)</h4>
-<!--               <h5>2014 - 2015</h5> -->
-              <p><em>Pooja School, Ahmedabad, Gujrat</em></p>
-              <p>Field Of Interests:-<br> Physics, Chemistry, Mathematics</p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Engineering in Computer Engineering</h4>
-<!--               <h5>2015 - 2020</h5> -->
-              <p><em>Ahmedabad Institute Of Technology, Ahmedabad, Gujrat</em></p>
-              <p>Field Of Interests:-<br> C programming, C++, Java, Microprocessing & Interfacing, Web Designing, HTML/CSS, Artificial Intelligence, Internet Of Things, Quantum Computing, Mathematics, Php, WordPress, .Net, Animations, Game Designing, Logo Design, Digital Marketing, Search Engine Optimization, E-Commerce, Data/Cyber Security.</p>
-            </div>
-          </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="testimonial-card-body">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Artificial Intelligence</h4>
-              <h5> 23rd  Dec 2019  to 30th March 2020</h5>
-<!--               <p><em>SenseQue Technologies Pvt. Ltd , Ahmedabad, Gujrat </em></p> -->
-              <ul>
-                <li>Initially I understood what is Artificial Intelligence and it's different parts and working areas.</li>
-                <li>After that, I have gone through the Machine Learning stuffs and able to create any type of model based on that.</li>
-                <li>Also, other models of computer vision along with recoved library and alogrithms are completed.</li>
-                <li>I have creates few projects based on AI and ML. They are as follows:
-                Face mask recognition, Object Direction, Attendence system, Self-driving car lane detection</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Internet Of Things</h4>
-              <h5>2017 - Present</h5>
-              <p><em></em></p>
-              <ul>
-                <li>Internet of Things starts with hardware in which I have advanced level of knowledge </li>
-                <li>In order to make hardware work according to our requirements, we need to program it in te same way.</li>
-                <li>Also, the name itself suggests us that it needs online storage facility to store the data. I have knowledge of how to handle data on cloud as well.</li>
-                <li>Projects built by me are Smart Dustbin facility, Smart home(with mobile app), Google assistant smart home and smart parking system.</li>
-              </ul>
-            </div>
-          </div>
+            </ul>
         </div>
-        </div>
+        <h3 class="resume-title">Education</h3>
+        <div class="resume-item">
+          <h4>HSC(Science)</h4>
+          <!--               <h5>2014 - 2015</h5> -->
+          <p><em>Pooja School, Ahmedabad, Gujrat</em></p>
+          <p>Field Of Interests:-<br> Physics, Chemistry, Mathematics</p>
       </div>
-    </section>
+      <div class="resume-item">
+          <h4>Bachelor of Engineering in Computer Engineering</h4>
+          <!--               <h5>2015 - 2020</h5> -->
+          <p><em>Ahmedabad Institute Of Technology, Ahmedabad, Gujrat</em></p>
+          <p>Field Of Interests:-<br> C programming, C++, Java, Microprocessing & Interfacing, Web Designing, HTML/CSS, Artificial Intelligence, Internet Of Things, Quantum Computing, Mathematics, Php, WordPress, .Net, Animations, Game Designing, Logo Design, Digital Marketing, Search Engine Optimization, E-Commerce, Data/Cyber Security.</p>
+      </div>
+  </div>
+</div>
+<div class="col-lg-6">
+    <div class="testimonial-card-body">
+        <h3 class="resume-title">Professional Experience</h3>
+        <div class="resume-item">
+          <h4>Artificial Intelligence</h4>
+          <h5> 23rd  Dec 2019  to 30th March 2020</h5>
+          <!--               <p><em>SenseQue Technologies Pvt. Ltd , Ahmedabad, Gujrat </em></p> -->
+          <ul>
+            <li>Initially I understood what is Artificial Intelligence and it's different parts and working areas.</li>
+            <li>After that, I have gone through the Machine Learning stuffs and able to create any type of model based on that.</li>
+            <li>Also, other models of computer vision along with recoved library and alogrithms are completed.</li>
+            <li>I have creates few projects based on AI and ML. They are as follows:
+            Face mask recognition, Object Direction, Attendence system, Self-driving car lane detection</li>
+        </ul>
+    </div>
+    <div class="resume-item">
+      <h4>Internet Of Things</h4>
+      <h5>2017 - Present</h5>
+      <p><em></em></p>
+      <ul>
+        <li>Internet of Things starts with hardware in which I have advanced level of knowledge </li>
+        <li>In order to make hardware work according to our requirements, we need to program it in te same way.</li>
+        <li>Also, the name itself suggests us that it needs online storage facility to store the data. I have knowledge of how to handle data on cloud as well.</li>
+        <li>Projects built by me are Smart Dustbin facility, Smart home(with mobile app), Google assistant smart home and smart parking system.</li>
+    </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 
 
 
@@ -318,24 +338,24 @@
 
 
 
-    <!-- portfolio section -->
-    <section class="section" id="portfolio">
-        <div class="container text-center">
-            <p class="section-subtitle">What I Did ?</p>
-            <h6 class="section-title mb-6">Portfolio</h6>
-            <!-- row -->
+<!-- portfolio section -->
+<section class="section" id="portfolio">
+    <div class="container text-center">
+        <p class="section-subtitle">What I Did ?</p>
+        <h6 class="section-title mb-6">Portfolio</h6>
+        <!-- row -->
 
         <!-- AI ----->
 
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img src="assets/imgs/Project/AI1.jpg" class="portfolio-card-img"
-                            alt="Logo">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Face Mask Recognition</h5>
-                                    <p class="font-weight-normal">Category: AI</p>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#" class="portfolio-card">
+                    <img src="assets/imgs/Project/AI1.jpg" class="portfolio-card-img"
+                    alt="Logo">
+                    <span class="portfolio-card-overlay">
+                        <span class="portfolio-card-caption">
+                            <h4>Face Mask Recognition</h5>
+                                <p class="font-weight-normal">Category: AI</p>
                             </span>
                         </span>
                     </a>
@@ -345,75 +365,75 @@
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
                         <img class="portfolio-card-img" src="assets/imgs/Project/AI2.jpg" class="img-responsive rounded"
-                            alt="Logo">
+                        alt="Logo">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Self-Driving Car Lane Detection</h5>
                                     <p class="font-weight-normal">Category: AI</p>
+                                </span>
                             </span>
-                        </span>
-                    </a>
-                </div>
+                        </a>
+                    </div>
 
 
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/Project/AI3.png" class="img-responsive rounded"
+                    <div class="col-md-4">
+                        <a href="#" class="portfolio-card">
+                            <img class="portfolio-card-img" src="assets/imgs/Project/AI3.png" class="img-responsive rounded"
                             alt="Logo">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Drowsy Driver Detection</h5>
-                                    <p class="font-weight-normal">Category: AI</p>
-                            </span>
-                        </span>
-                    </a>
-                </div>
+                            <span class="portfolio-card-overlay">
+                                <span class="portfolio-card-caption">
+                                    <h4>Drowsy Driver Detection</h5>
+                                        <p class="font-weight-normal">Category: AI</p>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
 
 
-            <!---- IOT ----->
+                        <!---- IOT ----->
 
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/Project/IoT1.png" class="img-responsive rounded"
-                            alt="Logo">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Smart Parking System</h5>
-                                    <p class="font-weight-normal">Category: IOT</p>
-                            </span>
-                        </span>
-                    </a>
-                </div>
+                        <div class="col-md-4">
+                            <a href="#" class="portfolio-card">
+                                <img class="portfolio-card-img" src="assets/imgs/Project/IoT1.png" class="img-responsive rounded"
+                                alt="Logo">
+                                <span class="portfolio-card-overlay">
+                                    <span class="portfolio-card-caption">
+                                        <h4>Smart Parking System</h5>
+                                            <p class="font-weight-normal">Category: IOT</p>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
 
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/Project/IoT3.jpg" class="img-responsive rounded"
-                            alt="Logo">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Smart Home(with mobile app)</h5>
-                                    <p class="font-weight-normal">Category: IOT</p>
-                            </span>
-                        </span>
-                    </a>
-                </div>
+                            <div class="col-md-4">
+                                <a href="#" class="portfolio-card">
+                                    <img class="portfolio-card-img" src="assets/imgs/Project/IoT3.jpg" class="img-responsive rounded"
+                                    alt="Logo">
+                                    <span class="portfolio-card-overlay">
+                                        <span class="portfolio-card-caption">
+                                            <h4>Smart Home(with mobile app)</h5>
+                                                <p class="font-weight-normal">Category: IOT</p>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
 
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/Project/IoT4.jpg" class="img-responsive rounded"
-                            alt="Logo">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Google Assistant Smart Home</h5>
-                                    <p class="font-weight-normal">Category: IOT</p>
-                            </span>
-                        </span>
-                    </a>
-                </div>
+                                <div class="col-md-4">
+                                    <a href="#" class="portfolio-card">
+                                        <img class="portfolio-card-img" src="assets/imgs/Project/IoT4.jpg" class="img-responsive rounded"
+                                        alt="Logo">
+                                        <span class="portfolio-card-overlay">
+                                            <span class="portfolio-card-caption">
+                                                <h4>Google Assistant Smart Home</h5>
+                                                    <p class="font-weight-normal">Category: IOT</p>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
 
 
 
-            <!-- GPS ---->
+                                    <!-- GPS ---->
 
             <!-- <div class="col-md-4">
                     <a href="#" class="portfolio-card">
@@ -442,51 +462,51 @@
                 </div> -->
 
 
-            <!--ARIOT--->
+                <!--ARIOT--->
 
-            <div class="col-md-4">
+                <div class="col-md-4">
                     <a href="#" class="portfolio-card">
                         <img class="portfolio-card-img" src="assets/imgs/Project/IoTAR1.jpeg" class="img-responsive rounded"
-                            alt="Logo">
+                        alt="Logo">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>IoT and AR based Home Automation project</h5>
                                     <p class="font-weight-normal">Category: ARIOT</p>
+                                </span>
                             </span>
-                        </span>
-                    </a>
-                </div>
+                        </a>
+                    </div>
 
-            <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/Project/IoTAR2.png" class="img-responsive rounded"
+                    <div class="col-md-4">
+                        <a href="#" class="portfolio-card">
+                            <img class="portfolio-card-img" src="assets/imgs/Project/IoTAR2.png" class="img-responsive rounded"
                             alt="Logo">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>oT and make our own AR based Home Automation project(Virtual Buttons)</h5>
-                                    <p class="font-weight-normal">Category: ARIOT</p>
-                            </span>
-                        </span>
-                    </a>
-                </div>
+                            <span class="portfolio-card-overlay">
+                                <span class="portfolio-card-caption">
+                                    <h4>oT and make our own AR based Home Automation project(Virtual Buttons)</h5>
+                                        <p class="font-weight-normal">Category: ARIOT</p>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
 
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/Project/IoTAR3.png" class="img-responsive rounded"
-                            alt="Logo">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>AR and IoT Sensor Data</h5>
-                                    <p class="font-weight-normal">Category: ARIOT</p>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-            </div><!-- end of row -->
-        </div><!-- end of container -->
-    </section> <!-- end of portfolio section -->
+                        <div class="col-md-4">
+                            <a href="#" class="portfolio-card">
+                                <img class="portfolio-card-img" src="assets/imgs/Project/IoTAR3.png" class="img-responsive rounded"
+                                alt="Logo">
+                                <span class="portfolio-card-overlay">
+                                    <span class="portfolio-card-caption">
+                                        <h4>AR and IoT Sensor Data</h5>
+                                            <p class="font-weight-normal">Category: ARIOT</p>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div><!-- end of row -->
+                    </div><!-- end of container -->
+                </section> <!-- end of portfolio section -->
 
-    <!-- pricing section -->
+                <!-- pricing section -->
     <!-- section class="section" id="pricing">
         <div class="container text-center">
             <p class="section-subtitle">How Much I Charge ?</p>
@@ -578,8 +598,8 @@
                     <button onclick="myFunction()" class="btn btn-lg my-font btn-light rounded">Hire Me</button>
                     <p id="demo"></p>
                     <script>
-                    function myFunction() {document.getElementById("demo").innerHTML = "+91 9723271716";}
-                </script>
+                        function myFunction() {document.getElementById("demo").innerHTML = "+91 9723271716";}
+                    </script>
                 </div>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -623,11 +643,11 @@
                 </div>
             </div> -->
         <!-- </div> 
-    </section>  -->
+        </section>  -->
 
-    <!-- blog section -->
-    <!-- <section class="section" id="blog"> -->
-        <!-- container -->
+        <!-- blog section -->
+        <!-- <section class="section" id="blog"> -->
+            <!-- container -->
         <!-- <div class="container text-center">
             <p class="section-subtitle">Recent Posts?</p>
             <h6 class="section-title mb-6">Blog</h6> -->
@@ -655,10 +675,10 @@
                             cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
 
                         <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
-                </div> -->
-            <!-- </div> -->
+                    </div> -->
+                    <!-- </div> -->
 
-            <!-- blog-wrapper -->
+                    <!-- blog-wrapper -->
             <!-- <div class="blog-card">
                 <div class="blog-card-header">
                     <img src="assets/imgs/img-2.jpg" class="blog-card-img"
@@ -682,67 +702,67 @@
                             eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
 
                         <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
-                </div> -->
-            <!-- </div> -->
+                    </div> -->
+                    <!-- </div> -->
 
-        <!-- </div> -->
-    <!-- </section> -->
+                    <!-- </div> -->
+                    <!-- </section> -->
 
-    <!-- contact section -->
-    <section class="section" id="contact">
-        <div class="container text-center">
-            <p class="section-subtitle">How can you communicate?</p>
-            <h6 class="section-title mb-5">Contact Me</h6>
-            <!-- contact form -->
-            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
-                <div class="form-row">
-                    <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email" requried>
-                    </div>
-                    <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6" class="form-control"
-                            placeholder="Write Something"></textarea>
-                    </div>
-                    <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
-                    </div>
-                </div>
-            </form><!-- end of contact form -->
-        </div><!-- end of container -->
-    </section><!-- end of contact section -->
+                    <!-- contact section -->
+                    <section class="section" id="contact">
+                        <div class="container text-center">
+                            <p class="section-subtitle">How can you communicate?</p>
+                            <h6 class="section-title mb-5">Contact Me</h6>
+                            <!-- contact form -->
+                            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+                                <div class="form-row">
+                                    <div class="form-group col-sm-6">
+                                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <input type="email" class="form-control" placeholder="Enter Email" requried>
+                                    </div>
+                                    <div class="form-group col-sm-12">
+                                        <textarea name="comment" id="comment" rows="6" class="form-control"
+                                        placeholder="Write Something"></textarea>
+                                    </div>
+                                    <div class="form-group col-sm-12 mt-3">
+                                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                                    </div>
+                                </div>
+                            </form><!-- end of contact form -->
+                        </div><!-- end of container -->
+                    </section><!-- end of contact section -->
 
-    <!-- footer -->
-    <div class="container">
-        <footer class="footer">
-            <p class="mb-0">Copyright
-                <script>document.write(new Date().getFullYear())</script> &copy; <a
-                    href="http://www.devcrud.com"></a> <a
-                    href="https://themewagon.com"></a>
-            </p>
-            <div class="social-links text-right m-auto ml-sm-auto">
-                <a href="https://www.facebook.com/people/Ritesh-Soni/100009667056074" class="link"><i class="ti-facebook"></i></a>
-                <a href="https://twitter.com/soniritesh4" class="link"><i class="ti-twitter-alt"></i></a>
-                <!-- <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a> -->
-                <!-- <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a> -->
-                <a href="https://www.instagram.com/i_am_.ritesh/" class="link"><i class="ti-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/er-ritesh-soni/" class="link"><i class="ti-linkedin"></i></a>
-            </div>
-        </footer>
-    </div> <!-- end of page footer -->
+                    <!-- footer -->
+                    <div class="container">
+                        <footer class="footer">
+                            <p class="mb-0">Copyright
+                                <script>document.write(new Date().getFullYear())</script> &copy; <a
+                                href="http://www.devcrud.com"></a> <a
+                                href="https://themewagon.com"></a>
+                            </p>
+                            <div class="social-links text-right m-auto ml-sm-auto">
+                                <a href="https://www.facebook.com/people/Ritesh-Soni/100009667056074" class="link"><i class="ti-facebook"></i></a>
+                                <a href="https://twitter.com/soniritesh4" class="link"><i class="ti-twitter-alt"></i></a>
+                                <!-- <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a> -->
+                                <!-- <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a> -->
+                                <a href="https://www.instagram.com/i_am_.ritesh/" class="link"><i class="ti-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/er-ritesh-soni/" class="link"><i class="ti-linkedin"></i></a>
+                            </div>
+                        </footer>
+                    </div> <!-- end of page footer -->
 
-    <!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+                    <!-- core  -->
+                    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+                    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
-    <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+                    <!-- bootstrap 3 affix -->
+                    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
-    <!-- Meyawo js -->
-    <script src="assets/js/meyawo.js"></script>
+                    <!-- Meyawo js -->
+                    <script src="assets/js/meyawo.js"></script>
 
-</body>
+                </body>
 
-</html>
+                </html>
