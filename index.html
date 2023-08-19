@@ -34,26 +34,35 @@
             <a class="logo" href="#"></a>
             <ul class="nav">
                 <li class="item">
-                    <a class="link" href="#home">Home</a>
+                    <a class="link" href="javascript:void(0);" onclick="navigateToSection('home')">Home</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#about">About</a>
+                    <a class="link" href="javascript:void(0);" onclick="navigateToSection('about')">About</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#skills">Skills</a>
+                    <a class="link" href="javascript:void(0);" onclick="navigateToSection('skills')">Skills</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#Resume">Resume</a>
+                    <a class="link" href="javascript:void(0);" onclick="navigateToSection('Resume')">Resume</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#portfolio">Portfolio</a>
+                    <a class="link" href="javascript:void(0);" onclick="navigateToSection('portfolio')">Portfolio</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#contact">Contact</a>
+                    <a class="link" href="javascript:void(0);" onclick="navigateToSection('contact')">Contact</a>
                 </li>
                 <!-- <li class="item ml-md-3">
                     <a href="components.html" class="btn btn-primary">Components</a>
                 </li> -->
+                <script>
+                    function navigateToSection(sectionId) {
+                        var section = document.getElementById(sectionId);
+                        if (section) {
+                            section.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }
+
+                </script>
             </ul>
             <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
                 <div class="hamburger-box">
@@ -193,69 +202,69 @@
 
 
                 <div class="row justify-content-between">
-                   <div class="col-md-5">
+                 <div class="col-md-5">
                     <!-- <h3 class="components-section-title font-weight-normal mt-5">Progress Bars :</h3> -->
                     <!-- <hr> -->
                     <small>Internet OF things</small>
                     <div class="progress mt-2 mb-3">
-                     <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0"
-                     aria-valuemax="100"><span></span></div>
-                 </div>
-                 <small>Computer Vision</small>
-                 <div class="progress mt-2 mb-3">
-                     <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25"
-                     aria-valuemin="0" aria-valuemax="100"><span></span></div>
-                 </div>
-                 <small>MACHINE LEARNING / DEEP LEARNING</small>
-                 <div class="progress mt-2 mb-3">
-                     <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25"
-                     aria-valuemin="0" aria-valuemax="100"><span></span></div>
-                 </div>
-                 <small>Augmented Reality</small>
-                 <div class="progress mt-2 mb-3">
-                     <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25"
-                     aria-valuemin="0" aria-valuemax="100"><span></span></div>
-                 </div>
-             </div>
-             <div class="col-md-5">
+                       <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0"
+                       aria-valuemax="100"><span></span></div>
+                   </div>
+                   <small>Computer Vision</small>
+                   <div class="progress mt-2 mb-3">
+                       <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25"
+                       aria-valuemin="0" aria-valuemax="100"><span></span></div>
+                   </div>
+                   <small>MACHINE LEARNING / DEEP LEARNING</small>
+                   <div class="progress mt-2 mb-3">
+                       <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25"
+                       aria-valuemin="0" aria-valuemax="100"><span></span></div>
+                   </div>
+                   <small>Augmented Reality</small>
+                   <div class="progress mt-2 mb-3">
+                       <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25"
+                       aria-valuemin="0" aria-valuemax="100"><span></span></div>
+                   </div>
+               </div>
+               <div class="col-md-5">
                 <small>HTML</small>
                 <div class="progress mt-2 mb-3">
-                 <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0"
-                 aria-valuemax="100"><span></span></div>
-             </div>
-             <small>CSS</small>
-             <div class="progress mt-2 mb-3">
-                 <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25"
-                 aria-valuemin="0" aria-valuemax="100"><span></span></div>
-             </div>
-             <small>C / C++</small>
-             <div class="progress mt-2 mb-3">
-                 <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25"
-                 aria-valuemin="0" aria-valuemax="100"><span></span></div>
-             </div>
-             <small>CYBER SECURITY</small>
-             <div class="progress mt-2 mb-3">
-                 <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25"
-                 aria-valuemin="0" aria-valuemax="100"><span></span></div>
-             </div>
-         </div>
-     </div>
-     <table class="table table-borderless text-left">
-       <tbody>
+                   <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0"
+                   aria-valuemax="100"><span></span></div>
+               </div>
+               <small>CSS</small>
+               <div class="progress mt-2 mb-3">
+                   <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25"
+                   aria-valuemin="0" aria-valuemax="100"><span></span></div>
+               </div>
+               <small>C / C++</small>
+               <div class="progress mt-2 mb-3">
+                   <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25"
+                   aria-valuemin="0" aria-valuemax="100"><span></span></div>
+               </div>
+               <small>CYBER SECURITY</small>
+               <div class="progress mt-2 mb-3">
+                   <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25"
+                   aria-valuemin="0" aria-valuemax="100"><span></span></div>
+               </div>
+           </div>
+       </div>
+       <table class="table table-borderless text-left">
+         <tbody>
 
 
 
-        <tr>
-         <td>
-            <p class="font-weight-bold text-muted">Description:</p>
-      </td>
-      <td>
-          <p>Experience in IoT Protocols (MQTT, AMQP, CoAP)<br>Proficient with Python/C/C++<br>Microcontroller ESP32, Arduino and others
-              <br>Experience of  PCB Layout in Easyeda Designer etc.<br>Protocols: - Ethernet, Wi-Fi, USB, Serial interfaces(SPI, I2C, RS485, RS422, RS232), Modbus, HTTP, MQTT<br>Build, test, and deploy firmware for prototypes and next generation wifi, ZigBee, and Bluetooth LE devices<br>Experience with testing and debugging embedded electronics, including operating knowledge of standard electronic test equipment.<br>Experience in API and Web Service<br>Experience in working with Linux and Windows environment</p>
-          </td>
-      </tr>
-  </li>
-</ol>
+            <tr>
+               <td>
+                <p class="font-weight-bold text-muted">Description:</p>
+            </td>
+            <td>
+              <p>Experience in IoT Protocols (MQTT, AMQP, CoAP)<br>Proficient with Python/C/C++<br>Microcontroller ESP32, Arduino and others
+                  <br>Experience of  PCB Layout in Easyeda Designer etc.<br>Protocols: - Ethernet, Wi-Fi, USB, Serial interfaces(SPI, I2C, RS485, RS422, RS232), Modbus, HTTP, MQTT<br>Build, test, and deploy firmware for prototypes and next generation wifi, ZigBee, and Bluetooth LE devices<br>Experience with testing and debugging embedded electronics, including operating knowledge of standard electronic test equipment.<br>Experience in API and Web Service<br>Experience in working with Linux and Windows environment</p>
+              </td>
+          </tr>
+      </li>
+  </ol>
 </td>
 </tr>
 </tbody>
