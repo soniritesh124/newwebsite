@@ -12180,6 +12180,11 @@ pre .code {
 .about-img-holder .about-img {
   width: 100%;
   margin-bottom: 15px;
+  border-inline-start: 4px solid;
+  border-block-start: 4px solid;
+  border-image-source: linear-gradient(circle at lop left, #695aa6 ,transfrent 50%);
+  border-image-slice: 1;
+  padding: 10px;
 }
 
 .about-caption {
